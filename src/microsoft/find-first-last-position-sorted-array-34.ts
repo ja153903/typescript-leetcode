@@ -4,7 +4,7 @@ function searchRange(nums: number[], target: number): number[] {
   }
 
   const left = search(nums, target);
-  if (nums[left] !== target) {
+  if (left === nums.length || nums[left] !== target) {
     return [-1, -1];
   }
 
